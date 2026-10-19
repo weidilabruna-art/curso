@@ -1,0 +1,159 @@
+.elementor-kit-5{--e-global-color-primary:#F4AB0C;--e-global-color-secondary:#0D0D0D;--e-global-color-text:#FFFFFF;--e-global-color-accent:#12A54B;--e-global-color-c7cdacd:#D1D5DC;--e-global-color-1ecaa80:#99A1AF;--e-global-color-e1afa87:#1D1C1C;--e-global-color-dd44da4:#E21D0E;--e-global-typography-primary-font-family:"Figtree";--e-global-typography-primary-font-weight:700;--e-global-typography-secondary-font-family:"Figtree";--e-global-typography-secondary-font-weight:400;--e-global-typography-text-font-family:"Figtree";--e-global-typography-text-font-weight:400;--e-global-typography-accent-font-family:"Figtree";--e-global-typography-accent-font-weight:700;background-color:var( --e-global-color-secondary );}.elementor-kit-5 e-page-transition{background-color:#FFBC7D;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1140px;}.e-con{--container-max-width:1140px;}.elementor-widget:not(:last-child){margin-block-end:20px;}.elementor-element{--widgets-spacing:20px 20px;--widgets-spacing-row:20px;--widgets-spacing-column:20px;}{}h1.entry-title{display:var(--page-title-display);}.site-header .site-branding{flex-direction:column;align-items:stretch;}.site-header{padding-inline-end:0px;padding-inline-start:0px;}.site-footer .site-branding{flex-direction:column;align-items:stretch;}@media(max-width:1024px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}.e-con{--container-max-width:1024px;}}@media(max-width:767px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}.e-con{--container-max-width:767px;}}/* Start custom CSS */html, body {
+width: 100%;
+overflow-x: hidden;
+}
+
+.links a,
+.links a:hover{
+    color: currentColor;
+}
+
+.svgs .elementor-icon svg {
+height: unset!important;
+margin-bottom: -7px;
+}
+
+.elementor-widget-text-editor p:last-child {
+margin-bottom:0px;
+}
+
+.balance{
+    text-wrap: balance;
+}
+
+._error-inner {
+    color: #F15151!important;
+}
+
+
+
+/* Overlay e modal */
+.track-ui__overlay {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(28, 28, 28, 0.82); 
+  backdrop-filter: blur(3px);
+  z-index: 999999;
+}
+
+.track-ui__overlay.is-on {
+  display: flex;
+}
+
+.track-ui__panel {
+  width: min(560px, 92vw);
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+  padding: 28px;
+  font-family: "Figtree", system-ui, sans-serif;
+}
+
+.track-ui__header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.track-ui__badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #fef2f2;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: #CC1F1F; 
+}
+
+.track-ui__title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827; 
+}
+
+.track-ui__text {
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.55;
+  margin: 0 0 18px 0;
+}
+
+.track-ui__actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+/* Botões */
+.track-ui__btn-primary {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background: #CC1F1F; 
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 100%;
+  transition: background 0.2s ease;
+}
+
+.track-ui__btn-primary:hover,
+.track-ui__btn-primary:focus {
+  background: #A51717;
+  color: #ffffff;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .track-ui__panel {
+    transform: translateY(10px);
+    opacity: 0;
+    transition: transform 220ms ease, opacity 220ms ease;
+  }
+  .track-ui__overlay.is-on .track-ui__panel {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.track-ui__sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+}/* End custom CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Figtree';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('../fonts/Figtree-Regular.eot');
+	src: url('../fonts/Figtree-Regular.eot#iefix') format('embedded-opentype'),
+		url('../fonts/Figtree-Regular.woff2') format('woff2'),
+		url('../fonts/Figtree-Regular.woff') format('woff'),
+		url('../fonts/Figtree-Regular.ttf') format('truetype'),
+		url('../images/Figtree-Regular.svg#Figtree') format('svg');
+}
+@font-face {
+	font-family: 'Figtree';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('../fonts/Figtree-Bold.eot');
+	src: url('../fonts/Figtree-Bold.eot#iefix') format('embedded-opentype'),
+		url('../fonts/Figtree-Bold.woff2') format('woff2'),
+		url('../fonts/Figtree-Bold.woff') format('woff'),
+		url('../fonts/Figtree-Bold.ttf') format('truetype'),
+		url('../images/Figtree-Bold.svg#Figtree') format('svg');
+}
+/* End Custom Fonts CSS */
